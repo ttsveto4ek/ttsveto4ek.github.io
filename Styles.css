@@ -1,0 +1,181 @@
+@font-face { font-family: BillaBong; src: url('Fonts/Billabong.ttf'); }
+
+body {
+    background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+a:hover {
+    color: #262626;
+}
+
+.prof-links {
+    color: #143667;
+}
+
+.font_inst {
+    align-self: baseline;
+    font-family: "BillaBong", cursive;
+    font-size: 30px;
+    color: #121212;
+    width: 100%;
+}
+
+
+#username {
+    font-family: "Courier New", roman, serif;
+}
+
+#search_form {
+    resize: both;
+    width: 215px;
+    height: 28px;
+    align-self: baseline;
+}
+
+#input {
+    text-align: center;
+}
+
+#dock {
+    align-self: baseline;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    height: 42px;
+    border-bottom: gray solid 1px;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    margin: 0 auto 55px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 250px 175px 110px 25px;
+    justify-content: center;
+}
+
+h2 {
+    position: relative;
+}
+
+#prof_image {
+    position: relative;
+    height: 150px;
+}
+
+#prof_image_div {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#edit_button {
+    position: relative;
+
+}
+
+button {
+    width: 95px;
+    height: 30px;
+    color: rgba(38, 38, 38, 1);
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 4px;
+}
+
+#options-button {
+    height: 25px;
+    position: relative;
+}
+
+.profile-stats {
+    margin: 30px auto 0;
+    display: grid;
+    row-gap: 45px;
+    grid-template-columns: 70px 100px 100px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+    font-family: "Arial", roman, serif;
+}
+
+.profile-stats > div {
+    position: relative;
+}
+
+.profile-description {
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    height: 160px;
+    margin-bottom: 22px;
+    border-bottom: gray solid 1px;
+}
+
+.highlights > div {
+    height: 105px;
+    width: 85px;
+}
+
+.high_text {
+    padding-top: 8px;
+    font-size: 12px;
+    font-family: "Arial", roman, serif;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#high1, #high2, #high3, #high4 {
+    height: 85px;
+    width: 85px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    margin: 0 auto 22px;
+}
+
+.posts {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    grid-template-columns: 293px 293px 293px;
+}
+
+.posts > div {
+    position: relative;
+}
+
+#post1, #post2, #post3, #post4, #post5, #post6 {
+    height: 293px;
+    width: 293px;
+}
+
+.section_spans {
+    font-family: "Arial", roman, serif;
+    margin-left: 6px;
+}
