@@ -1,4 +1,7 @@
-@font-face { font-family: BillaBong; src: url('Fonts/Billabong.ttf'); }
+@font-face {
+    font-family: BillaBong;
+    src: url('Fonts/Billabong.ttf');
+}
 
 body {
     background-color: #fafafa;
@@ -52,7 +55,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 150px;
+    gap: 100px;
     height: 42px;
     border-bottom: gray solid 1px;
     margin-bottom: 30px;
@@ -152,28 +155,77 @@ button {
 .sections {
     display: flex;
     flex-direction: row;
-    gap: 60px;
     justify-content: center;
+    gap: 60px;
     margin: 0 auto 22px;
 }
 
-.posts {
-    display: grid;
-    row-gap: 30px;
-    column-gap: 30px;
+.sections div {
+    width: auto;
+    margin: 0;
+}
+
+.posts-container {
+    max-width: 93.5rem;
     margin: 0 auto;
-    justify-content: center;
-    grid-template-columns: 293px 293px 293px;
+    padding: 0 2rem;
 }
 
-.posts > div {
+.posts-container > * {
+    width: auto;
+    margin: 0;
+    vertical-align: baseline;
+    max-width: 93.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
     position: relative;
+    flex: 1 0 22rem;
+    cursor: pointer;
 }
 
-#post1, #post2, #post3, #post4, #post5, #post6 {
-    height: 293px;
-    width: 293px;
+.gallery-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
+
+.gallery-item-info {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .section_spans {
     font-family: "Arial", roman, serif;
